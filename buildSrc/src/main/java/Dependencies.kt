@@ -1,5 +1,5 @@
 object Version {
-    const val androidXCoreKTX = "1.7.0"
+    const val androidXCoreKTX = "1.8.10"
     const val androidXLifecycleRuntimeKTX = "2.3.1"
     const val composeActivity = "1.3.1"
     const val composeUI = "1.4.3"
@@ -11,12 +11,16 @@ object Version {
     const val okhttp3LoggingInterceptor = "4.10.0"
     const val daggerHiltCore = "2.45"
     const val daggerHiltAndroidXCompiler = "1.0.0"
-    const val androidCore = "7.4.2"
+    const val androidXAppCompat = "1.6.1"
+    const val testImplementationJunit = "4.13.2"
+    const val androidTestImplementationJunit = "1.1.5"
+    const val androidTestImplementationEspresso = "3.5.1"
 }
 
 object AndroidX {
     const val coreKTX = "androidx.core:core-ktx:${Version.androidXCoreKTX}"
     const val lifecycleRuntimeKTX = "androidx.lifecycle:lifecycle-runtime-ktx:${Version.androidXLifecycleRuntimeKTX}"
+    const val appCompat = "androidx.appcompat:appcompat:${Version.androidXAppCompat}"
 }
 
 object Compose {
@@ -45,3 +49,13 @@ object DaggerHilt {
     const val compiler = "com.google.dagger:hilt-android-compiler:${Version.daggerHiltCore}"
     const val androidXCompiler = "androidx.hilt:hilt-compiler:${Version.daggerHiltAndroidXCompiler}"
 }
+
+object TestImplementation {
+    const val junit = "junit:junit:${Version.testImplementationJunit}"
+}
+
+object AndroidTestImplementation {
+    const val junit = "androidx.test.ext:junit:${Version.androidTestImplementationJunit}"
+    const val espresso = "androidx.test.espresso:espresso-core:${Version.androidTestImplementationEspresso}"
+}
+

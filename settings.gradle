@@ -14,6 +14,15 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ChainApp"
 include ':app'
-include ':app:feature_list'
 include ':feature_list'
 include ':feature_details'
+include ':core'
+include ':feature_list:data'
+include ':feature_list:presentation'
+include ':feature_details:data'
+include ':feature_details:domain'
+include ':feature_details:presentation'
+include ':core:common'
+include ':core:network'
+include ':core:feature_api'
+include ':feature_list:domain'

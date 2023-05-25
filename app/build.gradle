@@ -39,7 +39,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.4.3'
+        kotlinCompilerExtensionVersion '1.4.4'
     }
     packagingOptions {
         resources {
@@ -49,6 +49,10 @@ android {
 }
 
 dependencies {
+    implementation project(":feature_list:presentation")
+    implementation project(":core:common")
+    implementation project(":core:feature_api")
+
     implementation AndroidX.coreKTX
     implementation AndroidX.lifecycleRuntimeKTX
     implementation Compose.activity
@@ -66,4 +70,8 @@ dependencies {
     implementation DaggerHilt.core
     kapt DaggerHilt.compiler
     kapt DaggerHilt.androidXCompiler
+    implementation TestImplementation.junit
+    implementation AndroidTestImplementation.junit
+    implementation AndroidTestImplementation.espresso
+    implementation Compose.navigation
 }
