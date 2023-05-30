@@ -7,4 +7,6 @@ class TickersDataProviders @Inject constructor(
     private val apiService: ApiService
 ) {
     suspend fun getTickers() = apiService.getTickers()
+
+    suspend fun getTickerDetails(symbol: String) = apiService.getTickerDetail(symbol)
 }

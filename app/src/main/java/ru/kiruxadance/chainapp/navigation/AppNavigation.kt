@@ -14,5 +14,8 @@ fun AppNavGraph(
         navigationProvider.tickerApi.registerGraph(
             navController, this
         )
+        navigationProvider.tickerDetailApi.registerGraph(
+            navController, this
+        )
     }
 }

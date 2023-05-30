@@ -15,6 +15,7 @@ object Version {
     const val testImplementationJunit = "4.13.2"
     const val androidTestImplementationJunit = "1.1.5"
     const val androidTestImplementationEspresso = "3.5.1"
+    const val daggerHiltNavigationCompose = "1.0.0"
 }
 
 object AndroidX {
@@ -48,6 +49,7 @@ object DaggerHilt {
     const val core = "com.google.dagger:hilt-android:${Version.daggerHiltCore}"
     const val compiler = "com.google.dagger:hilt-android-compiler:${Version.daggerHiltCore}"
     const val androidXCompiler = "androidx.hilt:hilt-compiler:${Version.daggerHiltAndroidXCompiler}"
+    const val navigationCompose = "androidx.hilt:hilt-navigation-compose:${Version.daggerHiltNavigationCompose}"
 }
 
 object TestImplementation {

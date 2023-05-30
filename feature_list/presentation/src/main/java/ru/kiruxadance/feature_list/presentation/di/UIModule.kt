@@ -1,4 +1,4 @@
-package ru.kiruxadance.feature_list.presentation.navigation.di
+package ru.kiruxadance.feature_list.presentation.di
 
 import dagger.Module
 import dagger.Provides

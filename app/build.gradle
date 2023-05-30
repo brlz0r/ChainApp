@@ -50,6 +50,13 @@ android {
 
 dependencies {
     implementation project(":feature_list:presentation")
+    implementation project(":feature_list:data")
+    implementation project(":feature_list:domain")
+
+    implementation project(":feature_details:presentation")
+    implementation project(":feature_details:data")
+    implementation project(":feature_details:domain")
+
     implementation project(":core:common")
     implementation project(":core:feature_api")
 
@@ -59,19 +66,11 @@ dependencies {
     implementation Compose.ui
     implementation Compose.uiToolingPreview
     implementation Compose.material
-    implementation Compose.lifecycleViewModel
-    implementation Compose.navigation
-    implementation Compose.icons
-    implementation Coroutines.core
-    implementation Coroutines.android
-    implementation Retrofit.core
-    implementation Retrofit.converterGson
-    implementation Retrofit.okhttp3LoggingInterceptor
     implementation DaggerHilt.core
     kapt DaggerHilt.compiler
     kapt DaggerHilt.androidXCompiler
-    implementation TestImplementation.junit
-    implementation AndroidTestImplementation.junit
-    implementation AndroidTestImplementation.espresso
+    testImplementation TestImplementation.junit
+    androidTestImplementation AndroidTestImplementation.junit
+    androidTestImplementation AndroidTestImplementation.espresso
     implementation Compose.navigation
 }
